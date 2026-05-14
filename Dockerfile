@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM httpd
 
 # Install Apache
 RUN apt-get update && \
