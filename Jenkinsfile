@@ -20,7 +20,7 @@ pipeline {
         stage('Push to DockerHub') {
             steps {
                 sh 'docker login -u $DOCKER_USER -p $DOCKER_PASSWORD'
-                sh 'docker push akshaykadam45/myrepo:$[BUILD_NUMBER]
+                sh 'docker push akshaykadam45/myrepo:$[BUILD_NUMBER]'
             }
         }
     }
