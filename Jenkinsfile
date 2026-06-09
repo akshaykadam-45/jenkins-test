@@ -12,7 +12,7 @@ pipeline {
         stage('Build and Tag Image') {
             steps {
                 sh 'docker build -t myimage .'
-                sh 'docker tag myimage akshaykadam45/myrepo:$[BUILD_NUMBER]
+                sh 'docker tag myimage akshaykadam45/myrepo:$BUILD_NUMBER
             }
         }
 
